@@ -3,9 +3,9 @@ import { modules, students, mentors, classes } from "./hyf.js";
 
 const getPeopleOfClass = (className) => {
 
-  const findClass = classes.find(cls => cls.name === className);
+  const findClass = classes.find(cls => cls.name.includes(className));
 
-  if (!findClass) return [];
+ 
 
 
   const studentsClass = students
